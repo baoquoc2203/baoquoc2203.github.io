@@ -1,0 +1,72 @@
+@charset "ISO-8859-1";
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+#hero {
+	width: 100%;
+	height: 100vh;
+	background: url(../img/wallpaper.jpg) top center;
+	background-size: cover;
+}
+
+#hero p {
+	font-size: 34px;
+	color: #fff;
+	width: 300px;
+	right: 33px;
+	height: 395px;
+	text-align: center;
+}
+
+.typed {
+	position: relative;	
+	margin-left: 10px;
+	
+}
+.typed::after {
+	content:"";
+ 	color: #149ddd;
+	position: absolute;
+	right: -5px;
+	width:220px;
+	height:95%;
+	border-right: 2px solid white;
+	animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+	0%{opacity:0}
+	100%{opacity:1}
+	}	
+
+#hero h1 {
+	margin: 0 5px 10px 10px;
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 56px;
+	color: #fff;
+	height: 55px;
+	width: 330px;
+	background-image: linear-gradient(to left, black, grey, grey, white, white);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-family: "Raleway", sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+  
+section {
+	padding: 60px 0;
+	overflow: hidden;
+}
